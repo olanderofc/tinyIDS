@@ -30,7 +30,7 @@ This is an example of a regular expression rule:
     "rule_name": "Mastercard Credit Card Rule",
     "sport": 80
 }
-```
+````
 
 This is an example of a data matching rule with multiple data matching. The data is separated with a "|" as seen below.
 
