@@ -48,18 +48,18 @@ This is an example of a data matching rule with multiple data matching. The data
     "rule_name": "SQL Injection",
     "sport": 80
 }
-```
+````
 
 There are a couple of examples in the rules/ directory. The program will write an error to the screen if there is an issue in any rule. Example:
 
-```
+````
 "Rule error. Please check rule ./rules/russiadns.json"
-```
+````
 
 
 ## CLI Interface
 
-```
+````
 tinyIDS CLI
 A small, but flexible IDS. Keeping you paranoid since 2014.
 ===========================================================
@@ -95,7 +95,7 @@ date               Show current time
 clear log          Clear tinyids.log file
 quit/exit          Quit tinyIDS
 ==================================================
-```
+````
 
 ## IP Feeds
 
@@ -120,23 +120,23 @@ For instance in  http traffic the source port is 80 and destination port 80 depe
 tinyIDS is developed on Kali Linux using python 2.7. It requires some external libraries and they are all documented in the install script.
 Currently it is only tested on Kali Linux, Debian 7.7 and CentOS 7.0. To install on Kali:
 
-```
+````
 1. chmod +x INSTALL-KALI.sh
 2. ./INSTALL-KALI.sh
 3. python main.py
-```
+````
 
 And yes, it is also tested and working on a Raspberry Pi.
 
 A simple use case is to run a tap on a network port to inspect traffic. For debian you can configure a interface to be promiscious by editing the file
  /etc/network/interfaces
 
-```
+````
 auto eth0
 iface eth0 inet manual
         up ifconfig eth0 promisc up
         down ifconfig eth0 promisc down
-```
+````
 
 ## Configuration file
 Make sure you check out the tinyids.cfg file for settings and configuration parameters. Parameters such as 'trafficbuffer' should be set as you prefer.
@@ -148,38 +148,13 @@ tinyIDS uses mongodb to store alerts, filters, traffic exclusions etc.
 ## Traffic Exclusions
 It is possible to exclude traffic. However, only on TCP and UDP traffic. You can add entries to the database table excluded_traffic. The example below filters TCP traffic and port 22, 443.
 To exclude traffic you have to restart tinyIDS. Currently this cannot be done via CLI.
-``` mongodb
+```` mongodb
 use tinyids
 db.excluded_traffic.insert( { 'date' : new ISODate(), "proto" : 6 , port : 443 } )
 db.excluded_traffic.insert( { 'date' : new ISODate(), "proto" : 6 , port : 22 } )
-```
+````
 It will be visibile in the log when you start tinyIDS. For example:
-```
+````
 2015-02-01 20:28:40,937 Excluding all traffic for TCP port: 443
 2015-02-01 20:28:40,937 Excluding all traffic for TCP port: 22
-```
-
-## License
-
-The MIT License (MIT)
-
-Copyright (c) 2014 by David Olander
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
+````
