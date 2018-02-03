@@ -1,0 +1,13 @@
+{
+    "app": "dns", 
+    "block": "yes", 
+    "data": "02636E00", 
+    "dport": 53, 
+    "enabled": "yes", 
+    "file_name": "./rules/chinadns.json", 
+    "proto": "udp", 
+    "regexp": "no", 
+    "rule_id": 16, 
+    "rule_name": "China DNS traffic", 
+    "sport": 53
+}

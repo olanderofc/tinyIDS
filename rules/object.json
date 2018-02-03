@@ -1,0 +1,13 @@
+{
+    "app": "http", 
+    "block": "yes", 
+    "data": "3c6f626a6563743e", 
+    "dport": 80, 
+    "enabled": "yes", 
+    "file_name": "./rules/object.json", 
+    "proto": "tcp", 
+    "regexp": "no", 
+    "rule_id": 2, 
+    "rule_name": "Embedded <object> tag", 
+    "sport": 80
+}

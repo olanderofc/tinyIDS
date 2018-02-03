@@ -1,0 +1,13 @@
+{
+    "app": "http", 
+    "block": "no", 
+    "data": "4[0-9]{12}(?:[0-9]{3})?", 
+    "dport": 80, 
+    "enabled": "no", 
+    "file_name": "./rules/visa.json", 
+    "proto": "tcp", 
+    "regexp": "yes", 
+    "rule_id": 9, 
+    "rule_name": "VISA Credit Card Rule", 
+    "sport": 80
+}

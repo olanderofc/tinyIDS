@@ -1,0 +1,13 @@
+{
+    "app": "http", 
+    "block": "yes", 
+    "data": "2e737766|465753|782D73686F636B776176652D666C617368", 
+    "dport": 80, 
+    "enabled": "yes", 
+    "file_name": "./rules/swfobject.json", 
+    "proto": "tcp", 
+    "regexp": "no", 
+    "rule_id": 4, 
+    "rule_name": "Embedded .swf object", 
+    "sport": 80
+}

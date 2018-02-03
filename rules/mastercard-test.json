@@ -1,0 +1,13 @@
+{
+    "app": "http", 
+    "block": "no", 
+    "data": "3531313539313531313539313531313874", 
+    "dport": 80, 
+    "enabled": "no", 
+    "file_name": "./rules/mastercard-test.json", 
+    "proto": "tcp", 
+    "regexp": "no", 
+    "rule_id": 15, 
+    "rule_name": "Mastercard Credit Card Rule NO REGEXP", 
+    "sport": 80
+}

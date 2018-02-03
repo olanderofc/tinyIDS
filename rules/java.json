@@ -1,0 +1,13 @@
+{
+    "app": "http", 
+    "block": "yes", 
+    "data": "504B0304140008000800", 
+    "dport": 80, 
+    "enabled": "yes", 
+    "file_name": "./rules/java.json", 
+    "proto": "tcp", 
+    "regexp": "no", 
+    "rule_id": 7, 
+    "rule_name": "Java .jar file download", 
+    "sport": 80
+}

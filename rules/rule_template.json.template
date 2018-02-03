@@ -1,0 +1,13 @@
+{
+    "app": "http", 
+    "block": "no", 
+    "data": "3c7363726970743e", 
+    "dport": 80, 
+    "enabled": "yes", 
+    "file_name": "./rules/httpscript.json", 
+    "proto": "tcp", 
+    "regexp": "yes", 
+    "rule_id": 1, 
+    "rule_name": "VISA Credit Card Rule", 
+    "sport": 80
+}

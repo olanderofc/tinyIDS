@@ -1,0 +1,13 @@
+{
+    "app": "dns", 
+    "block": "yes", 
+    "data": "02727500", 
+    "dport": 53, 
+    "enabled": "yes", 
+    "file_name": "./rules/russiadns.json", 
+    "proto": "udp", 
+    "regexp": "no", 
+    "rule_id": 3, 
+    "rule_name": "Russia DNS traffic", 
+    "sport": 53
+}

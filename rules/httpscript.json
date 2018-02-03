@@ -1,0 +1,13 @@
+{
+    "app": "http", 
+    "block": "no", 
+    "data": "3c7363726970743e", 
+    "dport": 80, 
+    "enabled": "no", 
+    "file_name": "./rules/httpscript.json", 
+    "proto": "tcp", 
+    "regexp": "no", 
+    "rule_id": 1, 
+    "rule_name": "HTTP <script> tag", 
+    "sport": 80
+}

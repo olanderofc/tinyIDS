@@ -1,0 +1,13 @@
+{
+    "app": "http", 
+    "block": "yes", 
+    "data": "2532372B4F522B|53454C45435420|404076657273696F6E|53454C454354202A", 
+    "dport": 80, 
+    "enabled": "yes", 
+    "file_name": "./rules/sqli.json", 
+    "proto": "tcp", 
+    "regexp": "no", 
+    "rule_id": 6, 
+    "rule_name": "SQL Injection", 
+    "sport": 80
+}

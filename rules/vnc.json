@@ -1,0 +1,13 @@
+{
+    "app": "vnc", 
+    "block": "yes", 
+    "data": "524642", 
+    "dport": 0, 
+    "enabled": "no", 
+    "file_name": "./rules/vnc.json", 
+    "proto": "tcp", 
+    "regexp": "no", 
+    "rule_id": 5, 
+    "rule_name": "VNC Connection", 
+    "sport": 0
+}

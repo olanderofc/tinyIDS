@@ -1,0 +1,13 @@
+{
+    "app": "http", 
+    "block": "yes", 
+    "data": "25504446", 
+    "dport": 80, 
+    "enabled": "yes", 
+    "file_name": "./rules/pdffile.json", 
+    "proto": "tcp", 
+    "regexp": "no", 
+    "rule_id": 17, 
+    "rule_name": "PDF file download", 
+    "sport": 80
+}
