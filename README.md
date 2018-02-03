@@ -4,8 +4,7 @@ tinyIDS
 Technical details
 ---------------------
 This is an example of how you can use pcap libraries in python to build a POC IDS.
-The project is based on dpkt in python 2.7 and is only proof of concept. Development will continue but the most important part of the project is to spawn
-new ideas. The primary use case is penetration testing when sniffing traffic. 
+The project is based on dpkt in python 2.7 and is only proof of concept. Development will not continue. The code was created in 2014, so sorry for that. I hope this can give anyone ideas. I have used it to monitor traffic at home while doing malware analysis. It is also possible to use it for instance with pentesting etc.
 
 ## Rules
 
@@ -107,7 +106,7 @@ Use the CLI option 'dl threat list'
 
 ## How it works
 
-The way it matches is that it converts data to hex and then do a contains on the entire packet. If any packet triggers a log message is written to the screen and saved to a mysql/mariadb database.
+The way it matches is that it converts data to hex and then do a contains on the entire packet. If any packet triggers a log message is written to the screen and a pcap is saved to disk. 
 To create more rules simply copy a rule file and convert any string data such as ip to hex and put it in the "data" field of the rule.
 
 Right now matches are only made on the data part in the packet, however it can be expanded quite easily. It can also unpack gzip data in http packets to match on data that is gzipped.
